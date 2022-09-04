@@ -1,0 +1,31 @@
+.navigation-container {
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 1001;
+    width: 100%;
+    padding: 1rem 1rem; 
+    .nav-links-container {
+        
+        display: flex;
+        flex: 1;
+        align-items: right;
+        justify-content: right;
+
+        
+        .nav-link {
+            color:white;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: 'Jaldi', sans-serif;
+            font-size: 24px;
+            .icon {
+                width:50px;
+                height:50px;
+            }
+        }
+    }
+
+
+
+}

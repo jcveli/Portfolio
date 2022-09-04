@@ -1,0 +1,35 @@
+.details-container{
+    justify-content: left;
+    text-align: left;
+    margin-left: 5px;
+
+    outline:0ch;
+    padding: 1%;
+    border-radius: 25px;
+    background-color: #191f29;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 100%;
+    width: 70%;
+
+
+    a {
+        text-decoration: none;
+        color: white;
+
+    }
+    
+    .resume-button {
+    
+        color: white;
+        font-size: 20px;
+        padding: 10px 60px;
+        border-radius: 5px;
+        margin: 10px 0px;
+        align-content: center;
+        justify-content: center;
+        cursor: pointer;
+    
+
+    }
+    
+}
