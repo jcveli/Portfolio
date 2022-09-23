@@ -1,5 +1,11 @@
 # Portfolio site
 
+A basic portfolio webiste for myself to use and showcase my projects and social links to cantact me. 
+
+## Tech Stack
+- HTML & CSS/SCSS
+- JavaScript (JSX)
+- React
 
 ### Resources Used
 - CoreUI

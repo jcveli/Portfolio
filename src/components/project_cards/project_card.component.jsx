@@ -10,12 +10,15 @@ const ProjectCard = ({Projects}) => {
         <div className="project-container">
 
             {Projects.map((project) => (
-                <CCard className="project-card" id={project.id}>
-                    <CCardImage className='card-image' orientation="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" />
-                    <CCardBody>
+                
+                <CCard className="project-card" key={project.id}>
+                    <CCardImage className='card-image' orientation="top" src={project.imageUrl}/>
+                    <CCardBody className="text-center">
                         <CCardTitle>{project.title}</CCardTitle>
                         <CCardText>{project.description}</CCardText>
-                        <CButton className="btn btn-warning" href={project.gitUrl}><i className="cib-github icon icon-l"></i> GitHub</CButton>
+                    </CCardBody>
+                    <CCardBody>
+                        <CButton className="btn btn-warning"  href={project.gitUrl}><i className="cib-github icon icon-l"></i> GitHub</CButton>
                         <CButton className="btn btn-primary" href="#">Live Demo</CButton>
                     </CCardBody>
                 </CCard>

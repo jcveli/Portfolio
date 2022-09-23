@@ -4,14 +4,15 @@
     width: 100%;
     .project-container {
         display:flex;
-        flex-direction: row;
+
         flex-flow: wrap;
         justify-content: space-around;
         
         
         .project-card {
-            width: 300px;
-            height:400px;
+            margin-top: 20px;
+            width: 400px;
+            height:500px;
             color:black;
             border: 1px solid black;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;

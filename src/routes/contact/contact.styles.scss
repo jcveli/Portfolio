@@ -1,11 +1,13 @@
 .contact-container {
     display:flex;
-    flex-direction: row;
+
     flex-flow: wrap;
     justify-content: space-around;
     height: 100vh auto;
     padding: 5%;
     width: 100%;
+    outline: 1px;
+    outline-color: aliceblue;
     .contact-subtitles {
         margin-top: 50px;
     }
