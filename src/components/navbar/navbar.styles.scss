@@ -1,17 +1,22 @@
 .navigation-container {
-    background-color:rgba(0, 0, 0, 0);
+    background-color:rgba(25,31, 41, 0.95);
     position: absolute;
     z-index: 1001;
     width: 100%;
-    padding: 1rem 1rem; 
-    .nav-links-container {
+
+    .toggler-icon {
+        color:white;
+        border-width: 3px;
+        border-color: white;
+        align-items: right;
+
         
+     }
+    .nav-links-container {
         display: flex;
         flex: 1;
         align-items: right;
         justify-content: right;
-
-        
         .nav-link {
             color:white;
             padding: 10px 15px;
@@ -20,17 +25,29 @@
             font-family: 'Jaldi', sans-serif;
             font-size: 24px;
             .icon {
-                width:50px;
-                height:50px;
+                width:40px;
+                height:40px;
             }
 
-
-          
-
+            
         }
+        .nav-link:after {
+            content: ""; 
+            display: block; 
+            height: 3px;
+            width: 0;
+            background: transparent;
+            transition: width 0.7s ease, background-color 0.5s ease; 
+        }
+
+        .nav-link:hover:after {
+            width: 100%;
+            background:white;
+        }
+
+
         
     }
-
-
-
 }
+
+
