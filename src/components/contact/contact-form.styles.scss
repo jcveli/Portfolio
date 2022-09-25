@@ -2,9 +2,19 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding:1%;
     
+    .input-group{
+        margin-bottom: 50px;
+        border-radius: 25px;
+    }
 
     textArea {
         height:300px
+    }
+
+    .submit-button {
+        width:100%;
+        font-size: 24px;
     }
 }

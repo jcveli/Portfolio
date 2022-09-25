@@ -1,24 +1,18 @@
 .projects{
-    margin-top: 50px;
-    height: 100vh auto;
-    width: 100%;
+    background-color: #191f29;
+    overflow: auto;
+    height: auto;
+    width: auto;
+    .project-subtitles{
+        color:white;
+        text-align: center;
+        margin-top: 100px;
+    }
     .project-container {
         display:flex;
-
         flex-flow: wrap;
         justify-content: space-around;
+        height: 100vh;
         
-        
-        .project-card {
-            margin-top: 20px;
-            width: 400px;
-            height:500px;
-            color:black;
-            border: 1px solid black;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        }
-        .project-card:hover {
-            box-shadow: 0 5px 15px rgba(52, 103, 212, 0.815);
-        }
     }
 }

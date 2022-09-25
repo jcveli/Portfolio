@@ -6,8 +6,7 @@ const About = () => {
     return (
         <div className='about-container' id='about'>
             <Profile />    
-            <Details />
-                
+            <Details />  
         </div>
         
     )

@@ -1,9 +1,12 @@
 .navigation-container {
-    background-color:rgba(25,31, 41, 0.95);
-    position: absolute;
+    background-color:rgba(25,31, 41, 1);
+    position: fixed;
+    top:0; 
+    left: 0;
+    overflow: hidden;
     z-index: 1001;
     width: 100%;
-
+    
     .toggler-icon {
         color:white;
         border-width: 3px;

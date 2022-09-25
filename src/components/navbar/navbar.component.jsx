@@ -11,8 +11,7 @@ const Navigation = () => {
 
 
     return (
-       
-        
+         
         <Fragment>
             <CNavbar expand="lg" colorScheme='dark' className='navigation-container'>
                 <CContainer fluid>
@@ -26,17 +25,22 @@ const Navigation = () => {
                     <CCollapse className='navbar-collapse' visible={visible}>
                         <CNavbarNav className='nav-links-container'>
                             <CNavItem>
-                            <CNavLink className='nav-link' href='#about'>
+                            <CNavLink className='nav-link' href='/'>
+                                Home
+                            </CNavLink>
+                            </CNavItem>
+                            <CNavItem>
+                            <CNavLink className='nav-link' href='/about'>
                                 About
                             </CNavLink>
                             </CNavItem>
                             <CNavItem>
-                                <CNavLink className='nav-link' href='#projects'>
+                                <CNavLink className='nav-link' href='/projects'>
                                     Projects
                                 </CNavLink>
                             </CNavItem>
                             <CNavItem>
-                                <CNavLink className='nav-link' href='#contact'>
+                                <CNavLink className='nav-link' href='/contact'>
                                     Contact
                                 </CNavLink>
                             </CNavItem>

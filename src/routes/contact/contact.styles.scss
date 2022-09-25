@@ -1,14 +1,24 @@
 .contact-container {
-    display:flex;
-
-    flex-flow: wrap;
     justify-content: space-around;
-    height: 100vh auto;
+    height: 100vh;
     padding: 5%;
     width: 100%;
-    outline: 1px;
-    outline-color: aliceblue;
-    .contact-subtitles {
-        margin-top: 50px;
+    background-color: #191f29;
+    color:white;
+    .contact-field{
+        background-color: #364052;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        padding:1ch;
+        margin-top: 100px;
+      
+        .contact-subtitles {
+            margin-top: auto;
+            text-align: center;
+           
+        }
     }
+    
+
+
 }

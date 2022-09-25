@@ -1,9 +1,18 @@
-
+body {
+  overflow:auto;
+  margin-bottom:30px;
+}
+@media (max-width: 985px) {
+  body {
+    padding-top: 0px;
+  }
+}
 h1 {
   font-family: 'Jaldi', sans-serif;
 }
 
 p {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
 }
 

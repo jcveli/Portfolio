@@ -8,7 +8,6 @@ const ProjectCard = ({Projects}) => {
     return(
         
         <div className="project-container">
-
             {Projects.map((project) => (
                 
                 <CCard className="project-card" key={project.id}>
@@ -19,7 +18,7 @@ const ProjectCard = ({Projects}) => {
                     </CCardBody>
                     <CCardBody>
                         <CButton className="btn btn-warning"  href={project.gitUrl}><i className="cib-github icon icon-l"></i> GitHub</CButton>
-                        <CButton className="btn btn-primary" href="#">Live Demo</CButton>
+                        <CButton className="btn btn-primary" href={project.liveUrl}>Live Demo</CButton>
                     </CCardBody>
                 </CCard>
                 
