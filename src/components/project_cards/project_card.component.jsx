@@ -16,9 +16,9 @@ const ProjectCard = ({Projects}) => {
                         <CCardTitle>{project.title}</CCardTitle>
                         <CCardText>{project.description}</CCardText>
                     </CCardBody>
-                    <CCardBody>
+                    <CCardBody className="card-buttons">
                         <CButton className="btn btn-warning"  href={project.gitUrl}><i className="cib-github icon icon-l"></i> GitHub</CButton>
-                        <CButton className="btn btn-primary" href={project.liveUrl}>Live Demo</CButton>
+                        <CButton className="btn btn-primary" href={project.liveUrl}>Demo</CButton>
                     </CCardBody>
                 </CCard>
                 

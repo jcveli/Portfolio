@@ -26,10 +26,20 @@ const Project = () => {
 
         {
             "id": 3,
-            'title':'E-Commerce site',
-            'tech':'HTML & SCSS, JavaScript (JSX), React, CoreUI',
-            'description':"E-Commerce site for selling clothes.",
-            'gitUrl':"https://github.com/jcveli/portfolio",
+            'title':'Brain Breeze',
+            'tech':'JavaScript, React Native, React Native Paper',
+            'description':"Team project to deliver a Duolingo-like experience for a client and their students. Assisted in frontend development and was team leader.",
+            'gitUrl':"https://github.com/NerdJS-Project/Front-End",
+            'liveUrl':'https://www.youtube.com/watch?v=OR98go59_L4&ab_channel=PhucTruong',
+            'imageUrl': 'https://i.imgur.com/4fwENHN.png'
+        },
+
+        {
+            "id": 3,
+            'title':'Brain Breeze',
+            'tech':'Java, Codenameone framework, Eclipse',
+            'description':"A game called The Path is written in Java using the Codename One framework. Submitted for CSC 133 (Object-Oriented Computer Graphics Programming) class.",
+            'gitUrl':"https://github.com/jcveli/thePathGame",
             'liveUrl':'',
             'imageUrl': ''
         },

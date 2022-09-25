@@ -3,20 +3,28 @@
     color:white;
     margin-top: 20px;
     width: 400px;
-    height:500px;
+    height:500px auto;
     border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     .card-image{
-        height: 100%;
-        width:100%;
+        min-height: 300px;
+   
+        max-height: 300px;
+        width:auto;
         align-items: center;
         justify-content: center;
     }
-    
-    .btn {
-        margin-left: 5px;
-        position: relative;
+    .card-buttons {
+        text-align: center;
+        .btn {
+            margin-left: 5px;
+            position: relative;
+            width: 40%;
+        }
     }
+    
+
+   
 }
 
 .project-card:hover {
