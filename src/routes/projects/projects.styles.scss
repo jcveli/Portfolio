@@ -1,7 +1,7 @@
 .projects{
     background-color: #191f29;
     overflow: auto;
-    height: auto;
+    height: 100vh;
     width: auto;
     .project-subtitles{
         color:white;
@@ -12,7 +12,7 @@
         display:flex;
         flex-flow: wrap;
         justify-content: space-around;
-        height: 100vh;
+        margin-bottom: 30px;
         
     }
 }

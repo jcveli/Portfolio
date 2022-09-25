@@ -41,7 +41,7 @@ const Project = () => {
     return (
         <div className='projects'>
             <div className='project-subtitles'>
-            <h1>Project</h1>
+            <h1>PROJECTS</h1>
             <p>You can find more projects in my GitHub.</p>
             </div>
             <ProjectCard Projects={projects}/>
