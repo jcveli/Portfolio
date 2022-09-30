@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Pacifico', cursive;
  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

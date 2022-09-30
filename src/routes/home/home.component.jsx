@@ -1,16 +1,19 @@
 import Welcome from '../../components/welcome/welcome.component'
-// import About from '../about/about.component'
-// import Projects from '../projects/projects.component'
-// import Footer from '../../components/footer/footer.component'
-// import Contact from '../contact/contact.component'
+import { motion } from 'framer-motion'
 
 import './home.styles.scss'
 
 const Home = () => {
     return(
-        <div className="app-container">
-           <Welcome />    
-        </div>
+        <motion.div 
+            initial={{opacity: 0}} 
+            animate={{opacity: 1}} 
+            exit={{opacity: 0}}
+        >
+            <div className="app-container">
+                <Welcome />    
+            </div>
+        </motion.div>
     )
    
 }

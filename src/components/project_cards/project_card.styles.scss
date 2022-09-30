@@ -1,5 +1,5 @@
 .project-card{
-    background-color: #364052;
+    background-color: rgb(41, 43, 46);
     color:white;
     margin-top: 20px;
     width: 400px;
@@ -29,4 +29,5 @@
 
 .project-card:hover {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.815);
+    transition: box-shadow 1s ease;
 }

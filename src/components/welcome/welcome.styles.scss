@@ -4,8 +4,7 @@
     flex-direction: row;
     width:100%;
     height: 100vh;
-
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: rgba($color: #23293f, $alpha: 1.0);
 
     video {
         width: 100%;
@@ -22,16 +21,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
+        text-align: left;
         
-
-        h1,h2 {
-            font-family: 'Major Mono Display', monospace;
-            padding:2%;
+        h1{
+            
+            color:white;
+        }
+        .name{
+            color:#23293f;
+            font-size: 8vh;
             
         }
-        h1 {
-            font-size: 50px;
+        
+        .role{
+            font-family: 'Noto Sans JP', sans-serif;
         }
     }
 }

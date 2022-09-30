@@ -1,4 +1,5 @@
 import ProjectCard from '../../components/project_cards/project_card.component'
+import { motion } from 'framer-motion'
 import './projects.styles.scss'
 
 const Project = () => { 
@@ -35,8 +36,8 @@ const Project = () => {
         },
 
         {
-            "id": 3,
-            'title':'Brain Breeze',
+            "id": 4,
+            'title':'The Path',
             'tech':'Java, Codenameone framework, Eclipse',
             'description':"A game called The Path is written in Java using the Codename One framework. Submitted for CSC 133 (Object-Oriented Computer Graphics Programming) class.",
             'gitUrl':"https://github.com/jcveli/thePathGame",
@@ -49,13 +50,19 @@ const Project = () => {
 
 
     return (
-        <div className='projects'>
-            <div className='project-subtitles'>
-            <h1>PROJECTS</h1>
-            <p>You can find more projects in my GitHub.</p>
+        <motion.div
+            initial={{opacity: 0}} 
+            animate={{opacity: 1}} 
+            exit={{opacity: 0}}
+        >
+            <div className='projects'>
+                <div className='project-subtitles'>
+                    <h1>PROJECTS</h1>
+                    <p>You can find more projects in my GitHub.</p>
+                </div>
+                <ProjectCard Projects={projects}/>
             </div>
-            <ProjectCard Projects={projects}/>
-        </div>
+        </motion.div>
     )
 }
 

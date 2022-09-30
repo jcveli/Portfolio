@@ -6,8 +6,9 @@ const Welcome = () => {
         <div className='welcome-container'>
                 <video src={videoBg} autoPlay loop muted playsInline />
                 <div className='subtitle-container'>
-                    <h1>Jerald Velicaria</h1>
-                    <h2>Web Developer</h2>
+                    <h1>Hello World!</h1>
+                    <h1 className='name'>Jerald Velicaria</h1>
+                    <h1 className='role'>Web Developer</h1>
                 </div>
                 
                 

@@ -1,12 +1,14 @@
 .navigation-container {
-    background-color:rgba(25,31, 41, 1);
+    background-color:rgb(41, 43, 46);
     position: fixed;
     top:0; 
     left: 0;
     overflow: hidden;
     z-index: 1001;
     width: 100%;
-    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
     .toggler-icon {
         color:white;
         border-width: 3px;
@@ -24,8 +26,8 @@
             color:white;
             padding: 10px 15px;
             cursor: pointer;
+            font-family: 'Noto Sans JP', sans-serif;
             text-decoration: none;
-            font-family: 'Jaldi', sans-serif;
             font-size: 24px;
             .icon {
                 width:40px;

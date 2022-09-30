@@ -1,18 +1,21 @@
 
-
-body {
-  overflow:auto;
-  margin-bottom:30px;
- 
+.App {
+  min-height: 100vh;
+  color:white;
+  background-color: #23293f;
 }
 
 
-h1 {
-  font-family: 'Jaldi', sans-serif;
+h1{
+  color:white;
+  font-family: 'Pacifico', cursive;
+  padding:2%;
 }
 
-p {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 18px;
+p{
+  font-family: 'Noto Sans JP', sans-serif;
 }
+
+
+
 

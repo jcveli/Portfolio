@@ -1,21 +1,23 @@
-.contact-container {
-    justify-content: space-around;
-    height: 100vh;
+.contact {
+    min-height: 100vh;
     padding: 5%;
     width: 100%;
-    background-color: #191f29;
-    color:white;
+
     .contact-field{
-        background-color: #364052;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(41, 43, 46);
         border-radius: 25px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         padding:1ch;
         margin-top: 100px;
       
         .contact-subtitles {
-            margin-top: auto;
             text-align: center;
-           
+            padding:1%;
         }
     }
     

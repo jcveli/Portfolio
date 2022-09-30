@@ -1,10 +1,17 @@
-.about-container {
+.about {
+    min-height: 100vh;
+    padding-top: 100px;
     display:flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    height: 100vh;
-    padding: 10%;
-    width: 100%;
-    background-color: #191f29;
-    overflow:auto;
+    align-items: center;
+    background-color: rgba($color: #23293f, $alpha: 1.0);
+
+    .about-contents{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding:1%;
+    }
 }

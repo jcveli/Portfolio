@@ -1,20 +1,35 @@
 .form-container {
-    width: 100%;
+    flex:1;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding:1%;
     
-    .input-group{
-        margin-bottom: 50px;
-        border-radius: 25px;
+    
+    .labels{
+        font-size: 20px;
+        font-weight: bold;
     }
 
-    textArea {
-        height:300px
+    .input-group{
+        margin-bottom: 30px;
+    
+    }
+
+    .textArea {
+        height:200px
     }
 
     .submit-button {
+        color:white;
+        background:#23293f;
         width:100%;
         font-size: 24px;
+        font-weight: bold;
+    }
+
+    .submit-button:hover{
+     
+        background:rgb(91, 84, 84);
     }
 }
