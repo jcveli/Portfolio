@@ -20,16 +20,22 @@
         height:200px
     }
 
-    .submit-button {
-        color:white;
-        background:#23293f;
-        width:100%;
-        font-size: 24px;
-        font-weight: bold;
-    }
-
-    .submit-button:hover{
-     
-        background:rgb(91, 84, 84);
+    .submit-div{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        .submit-button {
+            color:white;
+            background:#23293f;
+            width:40%;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        .submit-button:hover{
+            color:black;
+            background:rgb(255, 255, 255);
+        }
     }
 }

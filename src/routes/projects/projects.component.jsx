@@ -8,7 +8,7 @@ const Project = () => {
         {
             "id": 1,
             'title':'Critix',
-            'tech':'HTML & SCSS, JavaScript, React, Node.js, Express.js, Mongoose, MongoDB',
+            'tech':'HTML & SCSS, JavaScript, React, Node.js, Express.js, Mongoose, MongoDB, BootStrap, Material UI',
             'description':"Social site for users to post and see reviews for movies from other users.",
             'gitUrl':"https://github.com/jcveli/critix/tree/main/client",
             'liveUrl':'',
@@ -51,17 +51,24 @@ const Project = () => {
 
     return (
         <motion.div
+            className='projects'
             initial={{opacity: 0}} 
             animate={{opacity: 1}} 
             exit={{opacity: 0}}
         >
-            <div className='projects'>
-                <div className='project-subtitles'>
-                    <h1>PROJECTS</h1>
-                    <p>You can find more projects in my GitHub.</p>
-                </div>
-                <ProjectCard Projects={projects}/>
-            </div>
+           
+            <motion.div 
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{
+                    delay: 0.3
+                }}
+            className='project-subtitles'>
+                <h1>Projects</h1>
+                <p>You can find more projects in my GitHub.</p>
+            </motion.div>
+            <ProjectCard Projects={projects}/>
+           
         </motion.div>
     )
 }

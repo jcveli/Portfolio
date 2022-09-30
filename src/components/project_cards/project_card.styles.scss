@@ -1,33 +1,44 @@
-.project-card{
-    background-color: rgb(41, 43, 46);
-    color:white;
-    margin-top: 20px;
-    width: 400px;
-    height:500px auto;
-    border: 1px solid black;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    .card-image{
-        min-height: 300px;
-   
-        max-height: 300px;
-        width:auto;
-        align-items: center;
-        justify-content: center;
-    }
-    .card-buttons {
-        text-align: center;
-        .btn {
-            margin-left: 5px;
-            position: relative;
-            width: 40%;
+.card-container{
+    margin-right: 10px;
+    padding:2%;
+    .project-card{
+        background-color: rgb(41, 43, 46);
+        color:white;
+        margin-top: 20px;
+        width: 400px;
+        height:500px auto;
+        border: 1px solid black;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        .card-image{
+            height: 300px;
+            max-width:auto;
+            align-items: center;
+            justify-content: center;
         }
+        .card-buttons {
+            text-align: center;
+            display: flex;
+            flex-flow:wrap;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+            padding: 3%;
+            width:100%;
+            .btn {
+                margin-left: 5px;
+                position: relative;
+                width: 40%;
+            }
+        }
+        
+    
+       
     }
     
-
-   
+    .project-card:hover {
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.815);
+        transition: box-shadow 1s ease;
+    }
 }
 
-.project-card:hover {
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.815);
-    transition: box-shadow 1s ease;
-}
+

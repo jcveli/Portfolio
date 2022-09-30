@@ -1,4 +1,5 @@
 import { CForm, CInputGroup, CFormInput, CFormTextarea, CButton, CFormLabel } from '@coreui/react'
+import { motion } from 'framer-motion'
 import { useState } from 'react'
 import './contact-form.styles.scss'
 import '@coreui/coreui/dist/css/coreui.min.css'
@@ -18,7 +19,14 @@ const ContactForm = () => {
 	  }
 
     return (
-        <div className='form-container'>
+        <motion.div 
+			initial={{opacity:0}}
+			animate={{opacity:1}}
+			transition={{
+				delay: 0.7
+			}}
+			className='form-container'
+		>
 			<CForm 
 			action="https://formsubmit.co/dd5c09ef55994b3c44bb8f912c4474d9" 
 			method="POST" 
@@ -62,12 +70,16 @@ const ContactForm = () => {
 					tooltipFeedback
 					required/> 
 				</CInputGroup>
-				<div>
+				<motion.div
+					whileHover={{scale: 1.2}} 
+					whileTap={{scale: 0.8}}
+					className='submit-div'
+				>
 					<CButton type='submit' color="" className='submit-button'>Submit</CButton>
-				</div>
+				</motion.div>
            </CForm>
             
-        </div>
+        </motion.div>
     )
 }
 

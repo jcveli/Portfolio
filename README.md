@@ -4,8 +4,10 @@ A basic portfolio webiste for myself to use and showcase my projects and social 
 
 ## Tech Stack
 - HTML & CSS/SCSS
-- JavaScript (JSX)
+- JavaScript
 - React
+- Core UI library
+- Framer Motion Library 
 
 ### Resources Used
 - CoreUI
