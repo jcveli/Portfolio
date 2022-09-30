@@ -6,8 +6,9 @@
     .contact-field{
         display:flex;
         flex-direction: row;
+        flex-flow: wrap;
         align-items: center;
-        flex-wrap: wrap;
+   
         justify-content: space-around;
         background-color: rgb(41, 43, 46);
         border-radius: 25px;

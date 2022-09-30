@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import ContactForm from '../../components/contact/contact-form.component'
+import ContactForm from '../../components/contact-form/contact-form.component'
 import '@coreui/coreui/dist/css/coreui.min.css'
 import './contact.styles.scss'
 
