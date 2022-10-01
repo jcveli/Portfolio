@@ -7,6 +7,8 @@ import Contact from './routes/contact/contact.component';
 import {Routes, Route, useLocation} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
+import '@coreui/coreui/dist/css/coreui.min.css'
+
 function App() {
 	const location = useLocation();
 	return (

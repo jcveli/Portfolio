@@ -19,16 +19,12 @@ const ContactForm = () => {
 	  }
 
 
-	const thankYou = () => { 
-		console.log("Message sent. Thank you!");
-	}
-
     return (
         <motion.div 
 			initial={{opacity:0}}
 			animate={{opacity:1}}
 			transition={{
-				delay: 0.7
+				delay: 1
 			}}
 			className='form-container'
 		>
@@ -44,6 +40,7 @@ const ContactForm = () => {
 				<CInputGroup className='input-group'>
 					<CFormInput
 						className='input-form' 
+						onFocus={{outlineColor:'blue'}}
 						type="email"
 						size='lg' 
 						name="email" 

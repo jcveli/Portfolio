@@ -9,10 +9,10 @@ const Project = () => {
             "id": 1,
             'title':'Critix',
             'tech':'HTML & SCSS, JavaScript, React, Node.js, Express.js, Mongoose, MongoDB, BootStrap, Material UI',
-            'description':"Social site for users to post and see reviews for movies from other users.",
+            'description':"Social site for users to post and see reviews for movies from other users. Currently in progress",
             'gitUrl':"https://github.com/jcveli/critix/tree/main/client",
             'liveUrl':'',
-            'imageUrl': ''
+            'imageUrl': 'https://i.imgur.com/HZSkDVc.png'
         },
 
         {
@@ -42,7 +42,7 @@ const Project = () => {
             'description':"A game called The Path is written in Java using the Codename One framework. Submitted for CSC 133 (Object-Oriented Computer Graphics Programming) class.",
             'gitUrl':"https://github.com/jcveli/thePathGame",
             'liveUrl':'',
-            'imageUrl': ''
+            'imageUrl': 'https://media.cheggcdn.com/media/d53/d535ce9a-4535-4e56-bd8e-81300a25a4f7/php4KwLCz'
         },
         
      
