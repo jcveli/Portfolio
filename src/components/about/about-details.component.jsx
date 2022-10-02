@@ -1,24 +1,38 @@
-
+import { ViewportSetting } from '../../utils/animation';
 import { motion } from 'framer-motion';
 import './about-details.styles.scss'
 
-const AboutDetails = () => {
+const AboutDetails =() => {
+    const textAnimate ={
+        initial:{
+            opacity:0, 
+            x: -20
+        },
+        whileInView:{
+            opacity:1,
+            x: 0
+        }
+    }
+
     return (       
+
+            
         
             <section className='details-container'>
                 <motion.h1
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
+                    initial={textAnimate.initial}
+                    whileInView={textAnimate.whileInView}
+                    viewport={ViewportSetting}
                     transition={{
                         delay: 0.7
                     }}
-                
                 >
                     About Me<br />
                 </motion.h1>
                 <motion.span
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
+                    initial={textAnimate.initial}
+                    whileInView={textAnimate.whileInView}
+                    viewport={ViewportSetting}
                     transition={{
                         delay: 1
                     }}

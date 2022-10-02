@@ -1,4 +1,4 @@
-$description-font-size:calc(0.5em + 1vmin);
+$description-font-size:calc(0.6em + 0.7vmin);
 
 .project-container {
     display:flex;
@@ -6,19 +6,18 @@ $description-font-size:calc(0.5em + 1vmin);
     justify-content: space-evenly;
     align-content:flex-start;
     padding:2%;
+    
 
     .card-container{
         .project-card{
-           
-            background-color: rgb(41, 43, 46);
+            background-color: #23293f;
             color:white;
-            margin-top: 20px;
             width:auto;
-            max-width: 700px;
-            height:600px;
-            
+            max-width: 600px;
+            height: 650px;
+            margin-top: 20px;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
+            border-radius: 25px;
             .title{
                 font-size: calc(1em + 1vmin);
             }
@@ -31,26 +30,26 @@ $description-font-size:calc(0.5em + 1vmin);
                 object-fit:contain;
             }
 
-            .tech-section{
+            .tech-span{
                 padding:1%;
-                height:70px;
+                
                 text-align: center;
-                font-size: $description-font-size;
+                font-size: calc(0.7em + 0.7vmin);
+                text-decoration: dashed;
                 overflow-y: auto;
+                color: rgba($color: #d6d4d4, $alpha: 1.0)
             }
 
             
             .text-container{
                 overflow-y: auto;
-                max-height:500px;
-                
+                text-align: left;
+                padding: 2%;
                 .project-description{
                     font-size: $description-font-size;
+                    text-decoration:double;
                 }
-
-                .project-description{
-                    font-weight: lighter;
-                }
+ 
             }
 
 
