@@ -1,6 +1,6 @@
 import { CContainer, CNavbar, CCollapse, CNavbarToggler, CNavItem, CNavLink, CNavbarNav, CNavbarBrand } from '@coreui/react';
 import { Fragment,useState } from 'react';
-import {NavLink, Outlet} from 'react-router-dom';
+import { Outlet} from 'react-router-dom';
 
 import './navbar.styles.scss'
 
@@ -25,24 +25,24 @@ const Navigation = () => {
                     <CCollapse className='navbar-collapse' visible={visible}>
                         <CNavbarNav className='nav-links-container'>
                             <CNavItem>
-                            <NavLink className='nav-link' to="/">
-                                Home
-                            </NavLink>
+                                <CNavLink className='nav-link' href='#'>
+                                    Home
+                                </CNavLink>
                             </CNavItem>
                             <CNavItem>
-                            <NavLink className='nav-link' to='/about'>
+                            <CNavLink className='nav-link' href='#about'>
                                 About
-                            </NavLink>
+                            </CNavLink>
                             </CNavItem>
                             <CNavItem>
-                                <NavLink className='nav-link' to='/projects'>
+                                <CNavLink className='nav-link' href='#projects'>
                                     Projects
-                                </NavLink>
+                                </CNavLink>
                             </CNavItem>
                             <CNavItem>
-                                <NavLink className='nav-link' to='/contact'>
-                                    Contact
-                                </NavLink>
+                                <CNavLink className='nav-link' href='#contacts'>
+                                    Contacts
+                                </CNavLink>
                             </CNavItem>
                             <CNavItem>
                                 <CNavLink className='nav-link' href='https://www.linkedin.com/in/jvelicaria/' target="_blank" rel="noopener noreferrer">

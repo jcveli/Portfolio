@@ -1,6 +1,7 @@
 import { CForm, CInputGroup, CFormInput, CFormTextarea, CButton, CFormLabel } from '@coreui/react'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { ViewportSetting } from '../../utils/animation'
 import './contact-form.styles.scss'
 import '@coreui/coreui/dist/css/coreui.min.css'
 
@@ -22,10 +23,11 @@ const ContactForm = () => {
     return (
         <motion.div 
 			initial={{opacity:0}}
-			animate={{opacity:1}}
+			whileInView={{opacity:1}}
 			transition={{
 				delay: 0.7
 			}}
+			viewport={{ViewportSetting}}
 			className='form-container'
 		>
 			<CForm 
@@ -77,7 +79,7 @@ const ContactForm = () => {
 					required/> 
 				</CInputGroup>
 				<motion.div
-					whileHover={{scale: 1.2}} 
+					whileHover={{scale: 1.1}} 
 					whileTap={{scale: 0.8}}
 					className='submit-div'
 				>

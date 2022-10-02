@@ -1,4 +1,5 @@
-import ProjectCard from '../../components/project_cards/project_card.component'
+import ProjectCard from '../../components/project_cards/project_card.component';
+import {ViewportSetting} from '../../utils/animation.js'
 import { motion } from 'framer-motion'
 import './projects.styles.scss'
 
@@ -9,7 +10,7 @@ const Project = () => {
             "id": 1,
             'title':'Critix (Work in Progress)',
             'tech':'HTML & SCSS, JavaScript, React, Node.js, Express.js, Mongoose, MongoDB, BootStrap, Material UI',
-            'description':"Social site for users to post and see reviews for movies from other users. Currently in progress",
+            'description':"Social site for users to post and see reviews for movies from other users. Utilized the TMDB API to fetch movie details.",
             'gitUrl':"https://github.com/jcveli/critix/tree/main/client",
             'liveUrl':'',
             'imageUrl': 'https://i.imgur.com/HZSkDVc.png'
@@ -50,26 +51,21 @@ const Project = () => {
 
 
     return (
-        <motion.div
-            className='projects'
-            initial={{opacity: 0}} 
-            animate={{opacity: 1}} 
-            exit={{opacity: 0}}
-        >
-           
+        <div className='projects'>
             <motion.section 
                 initial={{opacity:0}}
-                animate={{opacity:1}}
+                whileInView={{opacity:1}}
+                viewport={ViewportSetting}
                 transition={{
                     delay: 0.3
                 }}
-            className='project-subtitles'>
+            className='project-subtitles' id='projects'>
                 <h1>Projects</h1>
                 <p>You can find more projects in my GitHub.</p>
             </motion.section>
             <ProjectCard Projects={projects}/>
            
-        </motion.div>
+        </div>
     )
 }
 
