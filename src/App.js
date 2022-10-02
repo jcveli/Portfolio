@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Home from './routes/home/home.component'
 import About from './routes/about/about.component';
 import Project from './routes/projects/projects.component';

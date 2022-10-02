@@ -1,45 +1,79 @@
+$description-font-size:calc(0.5em + 1vmin);
+
 .project-container {
     display:flex;
     flex-flow: wrap;
-    justify-content: center;
-    align-content: center;
-    
+    justify-content: space-evenly;
+    align-content:flex-start;
+    padding:2%;
 
     .card-container{
-        padding:1%;
         .project-card{
            
             background-color: rgb(41, 43, 46);
             color:white;
             margin-top: 20px;
-            width: 600px;
-            height:500px auto;
-            border: 1px solid black;
+            width:auto;
+            max-width: 700px;
+            height:600px;
+            
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+            .title{
+                font-size: calc(1em + 1vmin);
+            }
+
             .card-image{
-                height: 300px;
+                height: 250px;
                 max-width:auto;
                 align-items: center;
                 justify-content: center;
-                object-fit: fit;
+                object-fit:contain;
             }
-            .project-description{
-                font-size: 18px;
-                text-align: left;
+
+            .tech-section{
+                padding:1%;
+                height:70px;
+                text-align: center;
+                font-size: $description-font-size;
+                overflow-y: auto;
             }
+
+            
+            .text-container{
+                overflow-y: auto;
+                max-height:500px;
+                
+                .project-description{
+                    font-size: $description-font-size;
+                }
+
+                .project-description{
+                    font-weight: lighter;
+                }
+            }
+
+
+
             .card-buttons {
                 text-align: center;
                 display: flex;
                 flex-flow:wrap;
-                justify-content: center;
+                justify-content: space-evenly;
                 align-items: center;
-                margin: auto;
                 padding: 2%;
                 width:100%;
                 .btn {
-                    margin-left: 5px;
+                    margin: 5px;
+                    font-weight: bold;
                     position: relative;
-                    width: 40%;
+                    width:200px;
+                    height:40px;
+                }
+
+                .btn:hover{
+                    background:white;
+                    color:black;
                 }
             }
             
@@ -48,7 +82,7 @@
         }
         
         .project-card:hover {
-            box-shadow: 5px 5px 15px 15px rgba(229, 223, 223, 0.815);
+            box-shadow: 5px 5px 15px 15px rgba(32, 31, 31, 0.815);
             transition: box-shadow 1s ease;
         }
     }

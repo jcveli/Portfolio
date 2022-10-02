@@ -7,7 +7,7 @@ const Project = () => {
     const projects = [
         {
             "id": 1,
-            'title':'Critix',
+            'title':'Critix (Work in Progress)',
             'tech':'HTML & SCSS, JavaScript, React, Node.js, Express.js, Mongoose, MongoDB, BootStrap, Material UI',
             'description':"Social site for users to post and see reviews for movies from other users. Currently in progress",
             'gitUrl':"https://github.com/jcveli/critix/tree/main/client",
@@ -57,7 +57,7 @@ const Project = () => {
             exit={{opacity: 0}}
         >
            
-            <motion.div 
+            <motion.section 
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 transition={{
@@ -66,7 +66,7 @@ const Project = () => {
             className='project-subtitles'>
                 <h1>Projects</h1>
                 <p>You can find more projects in my GitHub.</p>
-            </motion.div>
+            </motion.section>
             <ProjectCard Projects={projects}/>
            
         </motion.div>

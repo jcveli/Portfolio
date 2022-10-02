@@ -11,12 +11,20 @@ const Profile = () => {
 			animate={{ opacity: 1, scale: 1 }}
 			transition={{
 			  duration: 0.8,
-			  delay: 0.4
+			  delay: 0.3
 			}}
 		>
 			<div className="profile-container">
-				<img src={picture} alt="Profile"/>
+				<motion.img whileHover={{scale: 1.1}}  src={picture} alt="Profile"/>
 				<motion.div
+					initial={{opacity: 0, scale:0.5}}
+					animate={{ 
+						opacity: 1, 
+						scale: 1,
+						transition:{
+							delay:0.7
+						}
+					 }}
 					whileHover={{scale: 1.2}} 
 					whileTap={{scale: 0.8}}
 				>

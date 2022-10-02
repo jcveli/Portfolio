@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CCard, CCardImage, CCardBody, CCardTitle, CCardText, CButton } from '@coreui/react';
+import { CCard, CCardImage, CCardBody, CCardTitle, CCardText, CButton, CCardHeader, CListGroup } from '@coreui/react';
 import '@coreui/coreui/dist/css/coreui.min.css'
 
 import './project_card.styles.scss'
@@ -14,19 +14,25 @@ const ProjectCard = ({Projects}) => {
 						const {id, title, description, gitUrl, liveUrl, imageUrl, tech} = project;
 						return(
 							<motion.div
-							initial={{opacity:0}}
-							animate={{opacity:1}}
-							transition={{
-								delay: id * 0.4
+							initial={{opacity: 0, scale:0.5}}
+							animate={{opacity: 1,
+								scale:1,
+								transition:{
+									delay:id * 0.4 
+								}
 							}}
+							
+							whileHover={{scale:1.03}}
 							className='card-container'
 							key={id}
 						>
 							<CCard className="project-card">
+								<CCardHeader className="title" component="h2" style={{textAlign:'center'}}>{title}</CCardHeader>
 								<CCardImage className='card-image' orientation="top" src={imageUrl}/>
-								<CCardBody className="text-center">
-									<CCardTitle>{title}</CCardTitle>
-									<span>Technologies used: {tech}</span>
+								<CListGroup className="tech-section">
+									<span className="tech-span">{tech}</span>
+								</CListGroup>
+								<CCardBody className="text-container">
 									<CCardText className="project-description">{description}</CCardText>
 								</CCardBody>
 								<CCardBody className="card-buttons">

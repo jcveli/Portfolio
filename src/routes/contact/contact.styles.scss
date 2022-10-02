@@ -26,13 +26,19 @@
             }
 
             h1{
-                font-size: 42px;
+                font-size: calc(1em + 4vmin);
                 display:inline-block;
                 padding-bottom: 10px; 
                 position:relative;
         
             
             }
+
+            p,.contact-details{
+                font-size: calc(0.5em + 1vmin);
+            }
+
+          
         
             h1:before{ 
                 content: "";
@@ -48,9 +54,7 @@
                 text-decoration: none;
                 color:#ffffff;
             }
-            .link:hover{
-
-            }
+            
         }
     }
     

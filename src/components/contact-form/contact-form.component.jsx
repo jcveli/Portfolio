@@ -24,7 +24,7 @@ const ContactForm = () => {
 			initial={{opacity:0}}
 			animate={{opacity:1}}
 			transition={{
-				delay: 1
+				delay: 0.7
 			}}
 			className='form-container'
 		>
@@ -40,7 +40,7 @@ const ContactForm = () => {
 				<CInputGroup className='input-group'>
 					<CFormInput
 						className='input-form' 
-						onFocus={{outlineColor:'blue'}}
+						
 						type="email"
 						size='lg' 
 						name="email" 
