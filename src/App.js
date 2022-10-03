@@ -6,6 +6,7 @@ import {Routes, Route, useLocation} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import '@coreui/coreui/dist/css/coreui.min.css'
+import Footer from './components/footer/footer.component';
 
 function App() {
 	const location = useLocation();
@@ -22,7 +23,7 @@ function App() {
 			</AnimatePresence>
 			
 			
-		
+			<Footer />
 		</div>
 	  );
  

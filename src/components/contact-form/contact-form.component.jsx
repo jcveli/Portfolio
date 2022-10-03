@@ -1,5 +1,4 @@
 import { CForm, CInputGroup, CFormInput, CFormTextarea, CButton, CFormLabel } from '@coreui/react';
-import CIcon from '@coreui/icons-react';
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { ViewportSetting } from '../../utils/animation'
