@@ -1,16 +1,18 @@
 @import '../../utils/global-styles.scss';
 
 .footer-container {
+    bottom: 0; 
+    width:100%;
     background-color:$main-background-color;
     box-shadow: $section-box-shadow;
     color:$main-text-color;
     border: 0px;
-    height:70px;
+    min-height:70px;
     
     .footer-contents {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display:flex;
+        flex-flow: wrap;
+        align-items: center;
         width: 100%;
         font-family:$second-header-text-font;
         font-size: $text-responsive-font-size;
@@ -25,6 +27,10 @@
             flex:1;
             width:50%;
             text-align: right;
+
+            .tech-icon{
+                margin-left: 5px;
+            }
         }
     }
 }

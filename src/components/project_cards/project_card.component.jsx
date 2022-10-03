@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { CCard, CCardImage, CCardBody, CCardSubtitle, CCardText, CButton, CCardHeader } from '@coreui/react';
+import CIcon from "@coreui/icons-react";
 import '@coreui/coreui/dist/css/coreui.min.css'
 
 import './project_card.styles.scss'
 import { ViewportSetting } from "../../utils/animation";
+import { cibGithub, cilScreenDesktop } from "@coreui/icons";
 
 const ProjectCard = ({Projects}) => {
 
@@ -37,8 +39,8 @@ const ProjectCard = ({Projects}) => {
 									<CCardText className="project-description">{description}</CCardText>
 								</CCardBody>
 								<CCardBody className="card-buttons">
-									<CButton className="btn btn-warning"  href={gitUrl} target="_blank" rel="noopener noreferrer"><i className="cib-github icon icon-l"></i> GitHub</CButton>
-									<CButton className="btn btn-primary" href={liveUrl} target="_blank" rel="noopener noreferrer">Demo</CButton>
+									<CButton className="btn btn-warning"  href={gitUrl} target="_blank" rel="noopener noreferrer"><CIcon icon={cibGithub} size='lg'/> GitHub</CButton>
+									<CButton className="btn btn-primary" href={liveUrl} target="_blank" rel="noopener noreferrer"><CIcon icon={cilScreenDesktop} size='lg'/> Demo</CButton>
 								</CCardBody>
 							</CCard>
 						</motion.div>
