@@ -1,9 +1,12 @@
+@import "../../utils/global-styles.scss";
+
+
 .about {
     min-height: 100vh;
     padding-top: 100px;
     display:flex;
     align-items: center;
-    background-color: rgba($color: #23293f, $alpha: 1.0);
+    background-color: $secondary-background-color;
 
     .about-contents{
         display:flex;

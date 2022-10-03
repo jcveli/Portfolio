@@ -1,0 +1,20 @@
+
+/*Colors*/
+$main-background-color: rgb(41, 43, 46);
+$secondary-background-color: rgba($color: #23293f, $alpha: 1.0);
+$main-text-color: white;
+
+//Font family
+$regular-text-font:'Noto Sans JP', sans-serif;
+$header-text-font:'Pacifico', cursive;
+$second-header-text-font:'Kantumruy Pro', sans-serif;
+
+/* Font Sizes*/
+$name-responsive-font-size: calc(1em + 5vmin); 
+$text-responsive-font-size: calc(0.7em + 1vmin); 
+$section-header-responsive-font-size: calc(1em + 4vmin); 
+
+
+//Shadows
+$section-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+$container-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

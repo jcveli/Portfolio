@@ -2,10 +2,6 @@ import { motion } from "framer-motion";
 import './animated-text.styles.scss';
 
 const AnimatedText = ({texts}) => { 
-
-	
-
-
     const parentContainer = { 
         hidden: {opacity: 0},
         visible: (i = 1) => ({

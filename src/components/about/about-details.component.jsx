@@ -18,7 +18,7 @@ const AboutDetails =() => {
 
             
         
-            <section className='details-container'>
+            <section  className='details-container'>
                 <motion.h1
                     initial={textAnimate.initial}
                     whileInView={textAnimate.whileInView}

@@ -8,7 +8,7 @@ const Welcome = () => {
         {
             'id': 1,
             'message': 'Hello World!',
-            'className': ''
+            'className': 'greetings'
         },
         {
             'id': 2,

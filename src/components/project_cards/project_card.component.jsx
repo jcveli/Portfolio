@@ -19,7 +19,7 @@ const ProjectCard = ({Projects}) => {
 							whileInView={{opacity: 1,
 								scale:1,
 								transition:{
-									delay:id * 0.4 
+									delay:id * 0.3 
 								}
 							}}
 							viewport={ViewportSetting}

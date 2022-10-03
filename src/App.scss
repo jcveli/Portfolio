@@ -1,23 +1,21 @@
+@import './utils/global-styles.scss';
 
 .App {
   min-height: 100vh;
-  color:white;
-  background-color: #23293f;
+
 }
 
-
 h1{
-  color:white;
-  font-family: 'Pacifico', cursive;
+  font-family: $header-text-font;
 }
 
 h2{
-  font-family: 'Kantumruy Pro', sans-serif;
+  font-family: $second-header-text-font;
 }
 
 
 p{
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: $regular-text-font;
 }
 
 

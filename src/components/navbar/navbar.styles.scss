@@ -1,32 +1,35 @@
+@import '../../utils/global-styles.scss';
+
 .navigation-container {
-    background-color:rgb(41, 43, 46);
+    background-color:rgba(41, 43, 46,0.8);
     position: fixed;
     top:0; 
     left: 0;
-    overflow: hidden;
     z-index: 1001;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    backdrop-filter: blur(10px);
+    
+    
 
     .toggler-icon {
-        color:white;
+        color:$main-text-color;
         border-width: 3px;
-        border-color: white;
-        align-items: right;
-
-        
      }
+
+
+
+
     .nav-links-container {
         display: flex;
         flex: 1;
-        align-items: right;
-        justify-content: right;
+        align-items: center;
+        justify-content: center;
+     
         .nav-link {
-            color:white;
+            color:$main-text-color;
             padding: 10px 15px;
             cursor: pointer;
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: $second-header-text-font;
             text-decoration: none;
             font-size: 24px;
             .icon {

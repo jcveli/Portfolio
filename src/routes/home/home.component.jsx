@@ -3,7 +3,6 @@ import About from '../about/about.component';
 import Project from '../projects/projects.component';
 import Contact from '../contact/contact.component';
 
-import './home.styles.scss';
 
 const Home = () => {
     return(
