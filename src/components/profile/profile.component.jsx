@@ -55,7 +55,7 @@ const Profile = () => {
 					color="" 
 					size="lg" 
 					className='resume-button'
-					target="_blank"
+					target="_blank" rel="noopener noreferrer"
 					href='https://docs.google.com/document/d/1VjIT1cG4M0l6m2oolj7HO5ZtpJf0wvXHQdwpbRxEYVA/edit?usp=sharing'
 					>
 						<i className="cil-cloud-download icon icon-l"/> Resume

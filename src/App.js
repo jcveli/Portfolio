@@ -1,6 +1,7 @@
 import './App.scss';
 import Home from './routes/home/home.component'
 import Navbar from './components/navbar/navbar.component';
+
 import {Routes, Route, useLocation} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 

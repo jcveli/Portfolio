@@ -1,7 +1,6 @@
 import { CContainer, CNavbar, CCollapse, CNavbarToggler, CNavItem, CNavLink, CNavbarNav, CNavbarBrand } from '@coreui/react';
 import { Fragment,useState } from 'react';
 import { Outlet} from 'react-router-dom';
-
 import './navbar.styles.scss'
 
 const Navigation = () => {

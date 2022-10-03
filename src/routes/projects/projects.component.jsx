@@ -13,7 +13,7 @@ const Project = () => {
             'description':"Social site for users to post and see reviews for movies from other users. Utilized the TMDB API to fetch movie details.",
             'gitUrl':"https://github.com/jcveli/critix/tree/main/client",
             'liveUrl':'',
-            'imageUrl': 'https://i.imgur.com/HZSkDVc.png'
+            'imageUrl': 'https://i.imgur.com/AlxPwkO.png'
         },
 
         {
@@ -23,7 +23,7 @@ const Project = () => {
             'description':"Personal portfolio to showcase projects and personal links (where we are right now). Built with HTML, CSS, JavaScript and React.",
             'gitUrl':"https://github.com/jcveli/portfolio",
             'liveUrl':'https://jcveli.netlify.app/',
-            'imageUrl': 'https://i.imgur.com/U9Kf5Ng.png'
+            'imageUrl': 'https://i.imgur.com/vUAOAZc.png'
         },
 
         {

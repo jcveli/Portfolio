@@ -37,8 +37,8 @@ const ProjectCard = ({Projects}) => {
 									<CCardText className="project-description">{description}</CCardText>
 								</CCardBody>
 								<CCardBody className="card-buttons">
-									<CButton className="btn btn-warning"  href={gitUrl}><i className="cib-github icon icon-l"></i> GitHub</CButton>
-									<CButton className="btn btn-primary" href={liveUrl}>Demo</CButton>
+									<CButton className="btn btn-warning"  href={gitUrl} target="_blank" rel="noopener noreferrer"><i className="cib-github icon icon-l"></i> GitHub</CButton>
+									<CButton className="btn btn-primary" href={liveUrl} target="_blank" rel="noopener noreferrer">Demo</CButton>
 								</CCardBody>
 							</CCard>
 						</motion.div>

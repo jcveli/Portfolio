@@ -1,6 +1,30 @@
+@import '../../utils/global-styles.scss';
+
 .footer-container {
-    background-color:#191f29;
-    color:aliceblue;
-    border-width: 0px;
-    width: 100%;
+    background-color:$main-background-color;
+    box-shadow: $section-box-shadow;
+    color:$main-text-color;
+    border: 0px;
+    height:70px;
+    
+    .footer-contents {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        font-family:$second-header-text-font;
+        font-size: $text-responsive-font-size;
+        .signature{
+            width:50%;
+            text-align: left;
+            code{
+                color:$main-text-color;
+            }
+        }
+        .footer-links{
+            flex:1;
+            width:50%;
+            text-align: right;
+        }
+    }
 }
