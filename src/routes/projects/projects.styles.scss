@@ -1,16 +1,18 @@
+@import '../../utils/global-styles.scss';
+
 .projects{
     overflow: auto;
     min-height: 100vh;
     width: auto;
-    color:white;
-    background-color: rgb(41, 43, 46);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color:$main-text-color;
+    background-color: $main-background-color;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     .project-subtitles{
         text-align: center;
         margin-top: 100px;
         
         h1{
-            font-size: calc(1em + 4vmin);
+            font-size: $section-header-responsive-font-size;
             display:inline-block;
             padding-bottom: 10px; 
             position:relative;
@@ -18,7 +20,7 @@
         
         }
         p{
-            font-size: calc(0.5em + 1vmin);
+            font-size: $text-responsive-font-size;
         }
     
         h1:before{ 

@@ -16,7 +16,7 @@ const Profile = () => {
 			opacity: 1, 
 			scale: 1, 
 			x: 0,
-			rotate:[45, 0]
+			rotate:[ 65, 0]
 		}
 
 	}

@@ -1,9 +1,6 @@
 import './App.scss';
 import Home from './routes/home/home.component'
-import About from './routes/about/about.component';
-import Project from './routes/projects/projects.component';
 import Navbar from './components/navbar/navbar.component';
-import Contact from './routes/contact/contact.component';
 import {Routes, Route, useLocation} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 

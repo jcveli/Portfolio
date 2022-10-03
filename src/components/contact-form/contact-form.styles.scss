@@ -1,3 +1,5 @@
+@import '../../utils/global-styles.scss';
+
 .form-container {
     flex:1;
     flex-direction: row;
@@ -7,8 +9,10 @@
     
     
     .labels{
-        font-size: 20px;
+        font-size: $regular-text-font;
+        font-family: $second-header-text-font;
         font-weight: bold;
+  
     }
 
     .input-group{
@@ -16,12 +20,12 @@
         
         .input-form{
             color:white;
-            background: #23293f;
+            background: $secondary-background-color;
         }
 
         .input-form:focus {
             outline: none !important;
-            border:1px solid rgb(248, 247, 247);
+            border:1px solid $secondary-background-color;
         }
     
     }
@@ -36,8 +40,9 @@
         justify-content: center;
         .submit-button {
             color:white;
-            background:#23293f;
-            width:40%;
+            background:$secondary-background-color;
+            width:300px;
+            height:70px;
             font-size: 24px;
             font-weight: bold;
             text-transform: uppercase;

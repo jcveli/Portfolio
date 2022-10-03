@@ -1,3 +1,5 @@
+@import '../../utils/global-styles.scss';
+
 $description-font-size:calc(0.6em + 0.7vmin);
 
 .project-container {
@@ -10,13 +12,13 @@ $description-font-size:calc(0.6em + 0.7vmin);
 
     .card-container{
         .project-card{
-            background-color: #23293f;
+            background-color: $secondary-background-color;
             color:white;
             width:auto;
             max-width: 600px;
             height: 650px;
             margin-top: 20px;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: $container-box-shadow;
             border-radius: 25px;
             .title{
                 font-size: calc(1em + 1vmin);

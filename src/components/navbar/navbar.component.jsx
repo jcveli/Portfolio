@@ -14,7 +14,7 @@ const Navigation = () => {
          
         <Fragment>
             <CNavbar expand="lg" colorScheme='dark' className='navigation-container'>
-                <CContainer fluid>
+                <CContainer fluid className='fluid-container'>
                     <CNavbarBrand />
                     <CNavbarToggler
                         aria-label="Toggle navigation"
@@ -22,7 +22,7 @@ const Navigation = () => {
                         onClick={() => setVisible(!visible)}
                         className="toggler-icon"
                     />
-                    <CCollapse className='navbar-collapse' visible={visible}>
+                    <CCollapse className='collapse-container navbar-collapse' visible={visible}>
                         <CNavbarNav className='nav-links-container'>
                             <CNavItem>
                                 <CNavLink className='nav-link' href='#'>
