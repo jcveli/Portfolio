@@ -1,4 +1,5 @@
-import { CForm, CInputGroup, CFormInput, CFormTextarea, CButton, CFormLabel } from '@coreui/react'
+import { CForm, CInputGroup, CFormInput, CFormTextarea, CButton, CFormLabel } from '@coreui/react';
+import CIcon from '@coreui/icons-react';
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { ViewportSetting } from '../../utils/animation'
@@ -27,7 +28,7 @@ const ContactForm = () => {
 			transition={{
 				delay: 0.7
 			}}
-			viewport={{ViewportSetting}}
+			viewport={ViewportSetting}
 			className='form-container'
 		>
 			<CForm 
@@ -42,14 +43,15 @@ const ContactForm = () => {
 				<CInputGroup className='input-group'>
 					<CFormInput
 						className='input-form' 
-						
+
 						type="email"
 						size='lg' 
 						name="email" 
-						placeholder="name@example.com" 
-						feedbackInvalid="Please enter your email address."
-						tooltipFeedback						
+						placeholder="name@example.com"
+						feedbackValid="Nice" 
+						feedbackInvalid="Please enter a valid email address."
 						required
+						tooltipFeedback	
 					/>   
 				</CInputGroup>
 				<CFormLabel className='labels'>Subject</CFormLabel>
@@ -60,7 +62,7 @@ const ContactForm = () => {
 						name="_subject" 
 						placeholder="Subject" 
 						size='lg' 
-						feedbackInvalid="Please write in a subject for the message."
+						feedbackInvalid="Please write a subject for the message."
 						tooltipFeedback
 						required
 					/>   

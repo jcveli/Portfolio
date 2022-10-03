@@ -30,7 +30,7 @@ const Project = () => {
             "id": 3,
             'title':'Brain Breeze',
             'tech':'JavaScript, React Native, React Native Paper',
-            'description':"Team project to deliver a Duolingo-like experience for a client and their students. Assisted in frontend development and was team leader.",
+            'description':"Team project to deliver a Duolingo-like experience for a client and their students. Assisted in frontend development and was team leader. Video demo presented by team member, Phuc.",
             'gitUrl':"https://github.com/NerdJS-Project/Front-End",
             'liveUrl':'https://www.youtube.com/watch?v=OR98go59_L4&ab_channel=PhucTruong',
             'imageUrl': 'https://i.imgur.com/4fwENHN.png'
@@ -51,7 +51,7 @@ const Project = () => {
 
 
     return (
-        <div className='projects'>
+        <div className='projects' id='projects'>
             <motion.section 
                 initial={{opacity:0}}
                 whileInView={{opacity:1}}
@@ -59,7 +59,7 @@ const Project = () => {
                 transition={{
                     delay: 0.3
                 }}
-            className='project-subtitles' id='projects'>
+            className='project-subtitles' >
                 <h1>Projects</h1>
                 <p>You can find more projects in my GitHub.</p>
             </motion.section>

@@ -1,8 +1,10 @@
 import { CButton } from '@coreui/react';
+import CIcon from '@coreui/icons-react';
 import { ViewportSetting } from '../../utils/animation';
 import { motion } from 'framer-motion';
 import './profile.styles.scss'
 import picture from '../../assets/image/profile.jpg'
+import { cilDescription } from '@coreui/icons';
 
 
 const Profile = () => {
@@ -47,7 +49,7 @@ const Profile = () => {
 							delay:0.7
 						}
 					 }}
-					 viewport={ViewportSetting}
+					viewport={ViewportSetting}
 					whileHover={{scale: 1.2}} 
 					whileTap={{scale: 0.8}}
 				>
@@ -58,7 +60,7 @@ const Profile = () => {
 					target="_blank" rel="noopener noreferrer"
 					href='https://docs.google.com/document/d/1VjIT1cG4M0l6m2oolj7HO5ZtpJf0wvXHQdwpbRxEYVA/edit?usp=sharing'
 					>
-						<i className="cil-cloud-download icon icon-l"/> Resume
+					<CIcon icon={cilDescription} size='lg'/> View Resume
 					</CButton>
 
 				</motion.div>

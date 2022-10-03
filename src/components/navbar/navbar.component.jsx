@@ -1,7 +1,10 @@
 import { CContainer, CNavbar, CCollapse, CNavbarToggler, CNavItem, CNavLink, CNavbarNav, CNavbarBrand } from '@coreui/react';
+import CIcon from '@coreui/icons-react';
 import { Fragment,useState } from 'react';
+
 import { Outlet} from 'react-router-dom';
 import './navbar.styles.scss'
+import { cibGithub, cibLinkedin } from '@coreui/icons';
 
 const Navigation = () => {
     //used to determine if the menu is open or not 
@@ -45,12 +48,12 @@ const Navigation = () => {
                             </CNavItem>
                             <CNavItem>
                                 <CNavLink className='nav-link' href='https://www.linkedin.com/in/jvelicaria/' target="_blank" rel="noopener noreferrer">
-                                <i className="cib-linkedin icon icon-xxl" />
+                                <CIcon icon={cibLinkedin} size='xl'/>
                                 </CNavLink>
                             </CNavItem>
                             <CNavItem>
                                 <CNavLink className='nav-link' href='https://github.com/jcveli' target="_blank" rel="noopener noreferrer">
-                                    <i className="cib-github icon icon-xxl" />
+                                <CIcon icon={cibGithub} size='xl'/>
                                 </CNavLink>
                             </CNavItem>
                         </CNavbarNav>
@@ -59,28 +62,6 @@ const Navigation = () => {
             </CNavbar>
             <Outlet />
         </Fragment>
-
-        // <Fragment>
-        //     <div className='navigation-container'>
-        //         <div className='nav-links-container'>                  
-        //             <a className='nav-link' href='#about'>About</a>
-        //             <a className='nav-link' href='#projects'>Projects</a>
-        //             <a className='nav-link' href='#contact'>Contact</a>
-        //             <a className='nav-link' href='https://www.linkedin.com/in/jvelicaria/' target="_blank" rel="noopener noreferrer">
-        //                 <i className="cib-linkedin icon icon-xxl"></i>
-        //             </a>
-        //             <a className='nav-link' href='https://github.com/jcveli' target="_blank" rel="noopener noreferrer">
-        //                 <i className="cib-github icon icon-xxl"></i>
-        //             </a>
-
-        //             <div className='menu-icon'>
-        //                 <i></i>
-        //             </div>
-        //         </div>
-        //     </div>
-        //     <Outlet />
-        // </Fragment>
-        
     )
 }
 

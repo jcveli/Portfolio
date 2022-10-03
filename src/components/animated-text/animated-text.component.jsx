@@ -27,7 +27,7 @@ const AnimatedText = ({texts}) => {
                             <motion.h1
                                 initial={{
                                     opacity: 0,
-                                    x: 20,
+                                    x: -20,
                                     transition:{
                                         type:"spring",
                                         damping: 13, 
@@ -44,7 +44,7 @@ const AnimatedText = ({texts}) => {
                                         stiffness: 100
                                     }
                                 }}
-                                
+                                whileHover={{x:0, scale: 1.1}}
 								key={id}
                                 className={className}
                             >{message}</motion.h1>
