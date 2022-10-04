@@ -1,4 +1,4 @@
-@import '../../utils/global-styles.scss';
+@use '../../utils/global';
 
 .navigation-container {
     background-color:rgba(41, 43, 46,0.8);
@@ -12,7 +12,7 @@
     
 
     .toggler-icon {
-        color:$main-text-color;
+        color:global.$main-text-color;
         border-width: 3px;
      }
 
@@ -26,10 +26,10 @@
         justify-content: center;
      
         .nav-link {
-            color:$main-text-color;
+            color:global.$main-text-color;
             padding: 10px 15px;
             cursor: pointer;
-            font-family: $second-header-text-font;
+            font-family: global.$second-header-text-font;
             text-decoration: none;
             font-size: 24px;
             .icon {

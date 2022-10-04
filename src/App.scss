@@ -1,4 +1,4 @@
-@import './utils/global-styles.scss';
+@use './utils/global';
 
 .App {
   min-height: 100vh;
@@ -7,16 +7,16 @@
 }
 
 h1{
-  font-family: $header-text-font;
+  font-family: global.$header-text-font;
 }
 
 h2{
-  font-family: $second-header-text-font;
+  font-family: global.$second-header-text-font;
 }
 
 
 p{
-  font-family: $regular-text-font;
+  font-family: global.$regular-text-font;
 }
 
 

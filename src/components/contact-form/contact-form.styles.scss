@@ -1,4 +1,4 @@
-@import '../../utils/global-styles.scss';
+@use '../../utils/global';
 
 .form-container {
     flex:1;
@@ -6,8 +6,8 @@
     
     
     .labels{
-        font-size: $regular-text-font;
-        font-family: $second-header-text-font;
+        font-size: global.$regular-text-font;
+        font-family: global.$second-header-text-font;
         font-weight: bold;
   
     }
@@ -18,13 +18,13 @@
         .input-form{
             position: relative;
             color:white;
-            background: $secondary-background-color;
+            background: global.$secondary-background-color;
       
         }
 
         .input-form:focus {
             outline: none !important;
-            border:1px solid $secondary-background-color;
+            border:1px solid global.$secondary-background-color;
         }
     
     }
@@ -39,10 +39,11 @@
         justify-content: center;
         .submit-button {
             color:white;
-            background:$secondary-background-color;
+            background:global.$secondary-background-color;
             width:300px;
             height:70px;
             font-size: 24px;
+            font-family: global.$second-header-text-font;
             font-weight: bold;
             text-transform: uppercase;
         }

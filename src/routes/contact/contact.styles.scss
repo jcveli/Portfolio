@@ -1,11 +1,11 @@
-@import '../../utils/global-styles.scss';
+@use '../../utils/global';
 
 .contact {
     min-height: 100vh;
     padding: 2%;
     width: 100%;
-    background-color: $secondary-background-color;
-    box-shadow: $section-box-shadow;
+    background-color: global.$secondary-background-color;
+    box-shadow: global.$section-box-shadow;
     color: white;
     display: flex;
     align-items: center;
@@ -18,9 +18,9 @@
         align-items: center;
         margin-top: 50px;
         justify-content: space-around;
-        background-color: $main-background-color;
+        background-color: global.$main-background-color;
         border-radius: 25px;
-        box-shadow:$container-box-shadow;
+        box-shadow:global.$container-box-shadow;
    
        
         .contact-subtitles {
@@ -34,7 +34,7 @@
             }
 
             h1{
-                font-size: $section-header-responsive-font-size;
+                font-size: global.$section-header-responsive-font-size;
                 display:inline-block;
                 padding-bottom: 10px; 
                 position:relative;
@@ -43,7 +43,7 @@
             }
 
             p,.contact-details{
-                font-size: $text-responsive-font-size;
+                font-size:global.$text-responsive-font-size;
                 text-align: left;
             }
 

@@ -1,18 +1,18 @@
-@import '../../utils/global-styles.scss';
+@use '../../utils/global';
 
 .projects{
     overflow: auto;
     min-height: 100vh;
     width: auto;
-    color:$main-text-color;
-    background-color: $main-background-color;
+    color:global.$main-text-color;
+    background-color: global.$main-background-color;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     .project-subtitles{
         text-align: center;
         margin-top: 100px;
         
         h1{
-            font-size: $section-header-responsive-font-size;
+            font-size: global.$section-header-responsive-font-size;
             display:inline-block;
             padding-bottom: 10px; 
             position:relative;
@@ -20,7 +20,7 @@
         
         }
         p{
-            font-size: $text-responsive-font-size;
+            font-size:global.$text-responsive-font-size;
         }
     
         h1:before{ 

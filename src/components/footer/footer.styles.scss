@@ -1,11 +1,11 @@
-@import '../../utils/global-styles.scss';
+@use '../../utils/global';
 
 .footer-container {
     bottom: 0; 
     width:100%;
-    background-color:$main-background-color;
-    box-shadow: $section-box-shadow;
-    color:$main-text-color;
+    background-color:global.$main-background-color;
+    box-shadow: global.$section-box-shadow;
+    color:global.$main-text-color;
     border: 0px;
     min-height:70px;
     
@@ -14,13 +14,13 @@
         flex-flow: wrap;
         align-items: center;
         width: 100%;
-        font-family:$second-header-text-font;
-        font-size: $text-responsive-font-size;
+        font-family:global.$second-header-text-font;
+        font-size:global.$text-responsive-font-size;
         .signature{
             width:50%;
             text-align: left;
             code{
-                color:$main-text-color;
+                color:global.$main-text-color;
             }
         }
         .footer-links{
