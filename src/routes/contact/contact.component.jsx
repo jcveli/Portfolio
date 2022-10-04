@@ -33,10 +33,9 @@ const Contact = () => {
                     <h1>Contact</h1>
                     <p>If you need to reach me contact me via LinkedIn or message me here!</p>
                     <ul className='contact-details'>
-                        <p><CIcon icon={cibLinkedin} size='xl'/>
-                        <a href='https://www.linkedin.com/in/jvelicaria/' target="_blank" className='link' rel="noopener noreferrer"> LinkedIn</a></p>
-                        <p><CIcon icon={cilPhone} size='xl'/> (916)462-7120</p>
-                        <p><CIcon icon={cibGmail} size='xl'/> jeraldcvel@gmail.com</p>
+                        <p>&#8226; <CIcon icon={cibLinkedin} size='xl'/><a href='https://www.linkedin.com/in/jvelicaria/' target="_blank" className='link' rel="noopener noreferrer"> LinkedIn</a></p>
+                        <p>&#8226; <CIcon icon={cilPhone} size='xl'/> (916)462-7120</p>
+                        <p>&#8226; <CIcon icon={cibGmail} size='xl'/> jeraldcvel@gmail.com</p>
                     </ul>
                 </motion.section>
 
