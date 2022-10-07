@@ -12,7 +12,7 @@ const Project = () => {
             'tech':'HTML & SCSS, JavaScript, React, Node.js, Express.js, Mongoose, MongoDB, BootStrap, Material UI',
             'description':"Social site for users to post and see reviews for movies from other users. Utilized the TMDB API to fetch movie details.",
             'gitUrl':"https://github.com/jcveli/critix/tree/main/client",
-            'liveUrl':'https://crirtix.netlify.app/',
+            'liveUrl':'https://critix-app.netlify.app/',
             'imageUrl': 'https://i.imgur.com/AlxPwkO.png'
         },
 
