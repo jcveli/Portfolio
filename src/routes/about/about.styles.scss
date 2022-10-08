@@ -1,4 +1,4 @@
-@import "../../utils/global-styles.scss";
+@use "../../utils/global";
 
 
 .about {
@@ -6,7 +6,7 @@
     padding-top: 100px;
     display:flex;
     align-items: center;
-    background-color: $secondary-background-color;
+    background-color: global.$secondary-background-color;
     .about-contents{
         display:flex;
         flex-direction: row;

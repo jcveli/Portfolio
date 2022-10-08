@@ -1,4 +1,4 @@
-@import "../../utils/global-styles.scss";
+@use "../../utils/global";
 
 
 .details-container{
@@ -9,10 +9,10 @@
     text-align: left;
     padding: 30px;
     width:100%;
-    color: $main-text-color;
+    color: global.$main-text-color;
     
     h1{
-        font-size: $section-header-responsive-font-size;
+        font-size: global.$section-header-responsive-font-size;
         display:inline-block;
         padding-bottom: 10px; 
         position:relative;
@@ -27,21 +27,21 @@
         height: 1px;
         bottom: 0;
         left: 0;
-        border-bottom: 6px solid #ffffff;
+        border-bottom: 6px solid global.$accent-color;
     }
 
     span,code{
-        font-size: $text-responsive-font-size;
+        font-size:global.$text-responsive-font-size;
     }
 
     code{
-        color:$main-text-color;
+        color:global.$main-text-color;
     }
 
     a {
         font-weight: bold;
         text-decoration: none;
-        color:$main-text-color;
+        color:global.$main-text-color;
 
     }
 

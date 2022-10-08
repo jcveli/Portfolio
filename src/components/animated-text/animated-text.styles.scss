@@ -1,4 +1,4 @@
-@import '../../utils/global-styles.scss';
+@use '../../utils/global';
 
 $sub-title-font-size: calc(1em + 3vmin);
 
@@ -7,11 +7,11 @@ $sub-title-font-size: calc(1em + 3vmin);
     font-size: $sub-title-font-size;
 }
 .name{
-    font-size: $name-responsive-font-size;
+    font-size:global.$name-responsive-font-size;
     
 }
 
 .role{
-    //font-family: $second-header-text-font;
+    //font-family: global.$second-header-text-font;
     font-size: $sub-title-font-size;
 }
