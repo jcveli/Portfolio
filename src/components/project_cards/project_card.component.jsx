@@ -5,7 +5,7 @@ import '@coreui/coreui/dist/css/coreui.min.css'
 
 import './project_card.styles.scss'
 import { ViewportSetting } from "../../utils/animation";
-import { cibGithub, cilScreenDesktop } from "@coreui/icons";
+import { cibGithub, cilScreenDesktop, cilTags } from "@coreui/icons";
 
 const ProjectCard = ({Projects}) => {
 
@@ -33,7 +33,7 @@ const ProjectCard = ({Projects}) => {
 								<CCardHeader className="title" component="h2" style={{textAlign:'center'}}>{title}</CCardHeader>
 								<CCardImage className='card-image' orientation="top" src={imageUrl}/>
 								
-								<CCardSubtitle className="tech-span">{tech}</CCardSubtitle>
+								<CCardSubtitle className="tech-span"><CIcon icon={cilTags} size='lg'/> {tech}</CCardSubtitle>
 								
 								<CCardBody className="text-container">
 									<CCardText className="project-description">{description}</CCardText>
