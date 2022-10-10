@@ -1,0 +1,11 @@
+@use '../../utils/global';
+
+$description-font-size:calc(0.6em + 0.7vmin);
+
+.project-container {
+    display:flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-content:flex-start;
+    padding:2%;
+}

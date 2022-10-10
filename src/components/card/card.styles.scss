@@ -1,0 +1,103 @@
+@use "../../utils/global";
+
+$description-font-size:calc(0.6em + 0.7vmin);
+
+.card-container{
+    .project-card{
+        background-color: global.$secondary-background-color;
+        color:white;
+        width:auto;
+        max-width: 600px;
+        height: 650px;
+        margin-top: 20px;
+        box-shadow: global.$container-box-shadow;
+        border-radius: 25px;
+        .title{
+            font-size: calc(1em + 1vmin);
+        }
+
+        .card-image{
+            height: 250px;
+            max-width:auto;
+            align-items: center;
+            justify-content: center;
+            object-fit:contain;
+        }
+
+
+        //individual tag in ../tech-tag/tech-tag.styles
+        .tech-span{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap:5px;
+            padding:2%;
+            margin-top: 5px;
+            text-align: center;
+            font-size: calc(0.7em + 0.7vmin);
+            color: rgba($color: #d6d4d4, $alpha: 1.0)
+            
+        }
+
+        
+        .text-container{
+            overflow-y: auto;
+            text-align: left;
+            padding: 2%;
+            .project-description{
+                font-size: $description-font-size;
+                text-decoration:double;
+            }
+
+        }
+
+
+
+        .card-buttons {
+            text-align: center;
+            display: flex;
+            flex-flow:wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 2%;
+            width:100%;
+            .github-button, .demo-button {
+                display:flex;
+                margin: 5px;
+                font-weight: bold;
+                text-align:center;
+                justify-content: center;
+                gap:5px;
+                align-items: center;
+                position: relative;
+                width:200px;
+                height:40px;
+                border: 0px white;
+            }
+
+            .github-button{
+                background-color: global.$accent-color;
+                color:black;
+                
+            }
+
+            .demo-button{
+                background-color: global.$main-background-color;
+            }
+
+            .btn:hover{
+                background:white;
+                color:black;
+            }
+        }
+        
+    
+       
+    }
+    
+    .project-card:hover {
+        box-shadow: 5px 5px 15px 15px rgba(32, 31, 31, 0.815);
+        transition: box-shadow 1s ease;
+    }
+}
