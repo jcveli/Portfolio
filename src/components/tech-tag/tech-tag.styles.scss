@@ -1,0 +1,8 @@
+@use '../../utils/global';
+
+.tech-tag{
+    background-color: global.$accent-color;
+    color:black;
+    padding:7px;
+    border-radius: 20px;
+}
