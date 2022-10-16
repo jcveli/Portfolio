@@ -3,12 +3,11 @@
 $sub-title-font-size: calc(1em + 3vmin);
 
 .greetings{
-  
     font-size: $sub-title-font-size;
 }
-.name{
+.name, .role{
     font-size:global.$name-responsive-font-size;
-    
+    font-family:global.$second-header-text-font;
 }
 
 .role{
