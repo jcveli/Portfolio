@@ -4,7 +4,7 @@
     min-height: 100vh;
     padding: 2%;
     width: 100%;
-    background-color: global.$secondary-background-color;
+    background-color:  rgba($color: global.$secondary-background-color, $alpha: 0.9);
     box-shadow: global.$section-box-shadow;
     color: white;
     display: flex;
