@@ -4,11 +4,13 @@
     flex-direction: row;
     width:100%;
     height: 100vh;
-    background-color: global.$main-background-color;
+    //background-color: rgba($color: global.$main-background-color, $alpha: 0.2);
     video {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        position:fixed;
+        z-index: -1;
     }
 
     .subtitle-container {
