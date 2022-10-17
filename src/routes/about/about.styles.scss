@@ -24,15 +24,15 @@
         display:grid;
         text-align: center;
         padding: 1%;
+        width:100%;
         h3 {
             grid-area: header;
         }
         .skills-list { 
             display:grid;
             gap: 1rem;
-            grid-template-columns: repeat(5, 1fr);
-            grid-gap: 20px;
-            margin: 25px;
+            grid-template-columns: repeat(6, 1fr);
+            margin: 20px;
             .skill-icon{
                 display: flex;
                 flex-direction: column;
@@ -42,7 +42,7 @@
         }
 
 
-        @media (max-width: 430px){
+        @media (max-width: 600px){
             .skills-list{
                 display:grid;
                 gap: 1rem;
