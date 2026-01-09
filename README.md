@@ -1,5 +1,5 @@
 # Portfolio site
-A basic portfolio webiste for myself to use and showcase my projects and social links to cantact me. Created this to also review on building website applications as well as going over basic React concepts such as components. 
+A basic portfolio website for myself to use and showcase my projects and social links to contact me. Created this to also review on building website applications as well as going over basic React concepts such as components. 
 
 ## Tech Stack
 - HTML & CSS/SCSS
@@ -19,7 +19,7 @@ A basic portfolio webiste for myself to use and showcase my projects and social 
      - This greatly reduced the images size, (where I didn't modify the resolution and captured it on my desktop), from around 2.5 MBs to 212 KBs
    - this contributed greatly reducing my transfer size ~7 MB to ~1.5 MB; a **78.57% decrease**
 
-2. Reduce the amount of decleration by using globabl files 
+2. Reduce the amount of declaration by using global files 
 3. Transitions by using Framer Motion
 4. Got to know how to design a responsive site by using Flexbox properties and using min/max-width
 5. Further practiced using React with passing props, useStates, and components

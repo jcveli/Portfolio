@@ -7,7 +7,7 @@ const Welcome = () => {
     const texts = [
         {
             'id': 1,
-            'message': 'Hello World!',
+            'message': 'Hello, World!',
             'className': 'greetings'
         },
         {
@@ -17,7 +17,7 @@ const Welcome = () => {
         },
         {
             'id': 3,
-            'message': 'Web Developer',
+            'message': 'Grad Student & Software Developer',
             'className': 'role'
         },
     ];
